@@ -18,7 +18,7 @@ int main(int args, char * argv[])
     }
     int x1, y1, x2, y2;
     x1 = 1;
-    while (true) {
+    while (2 < 3) {
         scanf ("%d", &x1);
         if (x1 == 0) {
             break;
