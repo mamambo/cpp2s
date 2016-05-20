@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+//using namespace std;
+
 int main(int args, char * argv[])
 {
     int n;
@@ -16,17 +18,14 @@ int main(int args, char * argv[])
     }
     int x1, y1, x2, y2;
     scanf("%d", &x1);
-    if (x1 == 0) {
-        free(d);
-        return 0;
-    }
+    while (x1 != 0) {
     scanf("%d %d %d", &y1, &x2, &y2);
     for (int i = x1; i <= x2; i++) {
         for (int j = y1; j <= y2; j++) {
             printf("%d ", d[i][j]);
         }
         printf("\n");
-    }
+    } }
     free(d);
     return 0;
 }
