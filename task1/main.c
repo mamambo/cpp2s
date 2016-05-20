@@ -24,6 +24,7 @@ int main(int args, char * argv[])
             break;
         }
     scanf("%d %d %d", &y1, &x2, &y2);
+    assert(x1 >= 1 && x1 <= n && x2 >= 1 && x2 <= n && y1 >= 1 && y1 <= n && y2 >= 1 && y2 <= n);
     for (int i = x1; i <= x2; i++) {
         for (int j = y1; j <= y2; j++) {
             printf("%d ", d[i][j]);
